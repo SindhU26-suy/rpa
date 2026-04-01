@@ -1,0 +1,21 @@
+read all pdf files(WEEK - 11)
+
+for each file in folder---message box---exctract pdf text ----message box
+
+1) goto UiPath studio create a process
+2) create a folder thatvare contain the pdf files that  are to be excuted
+3) in UiPath studio create & save a new process and a folder  will be created
+4) copy and paste thr folder with pdf files in created foleder
+5) folder--demo folder--pdf
+        |__pdf
+6) --for each file in folder----
+   |__  in filder : browse the folder this pdf files 
+   |__ ckeck : include subfolders
+   |__filter by : "*.pdf"  --- it selct only pdf files
+
+7) --message box---
+   |__ text: currentfile.FullName
+8) ----exctract pdf text ---
+  |___used to exctractt text from pdf files .it store ____in properties -> ctrl+k extractfile
+9) --message box---
+  |__ select extractfile.toString.

@@ -1,0 +1,33 @@
+email automation (WEEK - 10)
+
+read range workbook->output data table as text -> messege box -> for each row in data table -> get row item(2) ->assign(2) -> send email
+
+1) open excel . enter 4 fields . save it ur process
+2) goto UiPath studio, create new process
+3) --read range work book--
+     |__ update it. selct ut sheet give name as "sheet1"-----click on properties in output - ctrl+k "data1".
+
+4) ---output table as text--
+    \__ give table name " data1" --- click properties -> in output "mydata"
+5)---message box--
+   |___ give "mydata.Tostring"
+
+
+6)---for each row in datatable--
+  |___give name "data1" -> item name select "CurrentRow"
+7) inside boday 
+  |__select ---get row item 
+        |__ currentrow , select Name , give "Name" same as excel sheet , propertirs in output give ctrl+k : username
+   |__ get row item 
+       |__ currentrow, select Name, Email ,propertirs in output give ctrl+k : usermail     
+
+
+8) ---assign---
+   |__to variable:  ctrl+x mail_id --> goto data manager set datatype to Array[N]->String
+   |__ set value : click + open in expeditor   ->now String(){useremail}" ->save
+9) --assign--
+  |__to variable : ctrl+x  mail_body
+  |__set value : "hi"+username+environment.New Line+"this is demo for email automation"+environment.New Line +"regrads"+environment.NewLine+"sindhu"
+
+10) goto --send mail--
+   |__enter ut email, ckeck false , to : mail_id , subject "Hi" ,body : mail_body.

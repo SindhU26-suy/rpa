@@ -1,0 +1,32 @@
+automating data table using excel (WEEK -9)
+
+read range workbook->output data table as text -> messege box -> in side do for each roe in table -> inside body type info(6) , click -> write range workbook
+
+1) open  UiPath 
+2) create new process
+3) select ------read range workbook-------
+4) goto manage package  choose 2nd option and select 3.3.1 version and click update.
+5) goto google type rpa challenge -> download the 1st link
+6) goto folder -> documents -> UiPath -> process(wekk-9) -> paste downloaded file
+7) goto read range workbook -> selct folder -> types " sheet1" -> click read range book properties  in the output -> ctrl+k : "dt" 
+8) next select output name -> dt
+9) click on output data table as text -> properties -> ctrl+k : "output"
+10) select------message box----
+11) in text -> output.toString
+12) open ----use application/browser--------
+13) click on indicate screen --> select entire page which you opended already (RPA challenges)
+14) it has first ,last name,ph no,email
+15) inside ----do----    
+     |___add----for each row----in datatable
+     -data table "dt"
+     -item name  "current row"
+16) inside --body--
+   |__type info 
+         |__indicate screen select all fileds 1 by 1 click validate and confirm
+   |__type this "Current Row(" ").toString     
+          |__ copy and paste all fields. names from xl sheet
+17) select ----click--- inside the body
+    |__indicate screen -> click submit button u should validate and confirm
+    |__write range workbook
+          |__select ur folder ->enter "sheet2" select table name "dt"
+18) run the program u will get details in sheet 2

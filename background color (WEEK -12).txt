@@ -1,0 +1,16 @@
+background color (WEEK -12)
+
+excel process scope  -- inside do --use excel file -- another do , set range color.
+
+1) move the excel file whose background colour need to changed to the folder of the process
+2) --- use excel file----    
+    |__browse this excel file : select file , reference : excel , check save change - create if not exists .read format - same as project
+
+3)goto filters --check classic --to get other activies such as  set range color.  
+
+
+4) inside do ---set range color---
+   |__ System.Drawing.Color.GreenYellow
+   |__ enter range (A1:D5)
+   \__sheet1
+set color the cell need to change color . mention range of colors changed , specify the sheet name.

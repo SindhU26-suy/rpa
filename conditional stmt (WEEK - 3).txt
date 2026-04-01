@@ -1,0 +1,21 @@
+conditional stmts (WEEK - 3)
+
+even or odd__________________
+
+1) Open UiPath Studio . Create a New Process . slect ---input dialog---
+  |__ dialog box,input label enter text ,input type :  text box , vaolue : select data manger to cteate variable type int, select it
+2) take -- if--
+   |__ condition : num1 Mod 2 = 0
+    then   even  else odd
+
+student grade______________________
+
+1) input dialog box
+2) create 3 variables inputmarks: string  , marks : int , grade : string
+3) input dialog : intmarks
+ 4) assign activity---
+  |__marks   , Convert.ToInt32(inputMarks) 
+5) if --then   if-marks  , then-grade
+   |__else __if __then
+                   |__else__if__then
+                                |__else 

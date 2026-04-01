@@ -1,0 +1,9 @@
+web recording ( WEEk - 5)
+close all tabs
+logout email
+select  web record -> target sceen 
+open google _> type into or text 
+search gmail ->confirm
+select 1st site
+enter username enter
+enter password

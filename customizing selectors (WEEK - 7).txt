@@ -1,0 +1,12 @@
+customizing selectors (WEEK - 7)
+  
+
+1)  open UiPath studio and create new process
+2 ) open required browser (chrome/edge)
+3) --use application browser----
+  |__navigate to the target website . now click on thw brpwser
+4) ---type into---
+  |__  select search bar  , enter data into search boul  "Intelligent Automation" , verify : none.
+5) --click ---
+    |___ indicate "google search"   , verify : none
+    |__ right site u see the target  click on it   ----ckeck computer vision  

@@ -1,0 +1,7 @@
+variable and data types(WEEK -2)
+
+employe
+ 
+1) assign activity ---(3)
+2) message box
+  |__"name :" + emp + ",age:" + age.ToString() + ",salary : " + salary.ToString()

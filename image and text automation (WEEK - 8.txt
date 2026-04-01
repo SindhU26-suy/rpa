@@ -1,0 +1,17 @@
+image and text automation (WEEK - 8)
+  
+get ocr  test --- tesseract ocr ---log message--write message
+
+1) open UiPath studio , create a new process
+2) open ---Get OCR text-- into the work flow 
+3) open chrome and take the screenshot od required text. 
+4) click on indicate the sceen . indicate require the image. 
+5) select --tesseract OCR engine -- 
+   |__ its drog and drag the tesseract ocr inside get ocr engine.
+    \__properties -> output -> Image_text_automation
+6) now click on ---log message --- 
+   |__give output name which u gave , log level : info selct
+7) select --write text file---
+  |__ in the write to file : give path of the text document that was created in the week - 8 fields give text as image_text_automation
+
+    
